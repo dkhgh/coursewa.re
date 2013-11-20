@@ -13,6 +13,7 @@ gem 'gravatar_image_tag'
 gem 'daemons'
 gem 'kaminari'
 gem 'ruby-oembed'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 # Speedup a bit things
 gem 'multi_json'
@@ -52,7 +53,7 @@ group :development, :test do
   gem 'ffaker'
   gem 'fabrication'
   gem 'guard-rspec'
-  gem 'rb-inotify'
+  gem 'rb-inotify', :require => false
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'database_cleaner'

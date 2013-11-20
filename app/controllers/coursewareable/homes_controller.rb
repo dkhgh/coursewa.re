@@ -13,7 +13,8 @@ module Coursewareable
       if logged_in?
         redirect_to(dashboard_home_path)
       else
-        render('coursewareable/sessions/new')
+                redirect_to(dashboard_home_path)
+
       end
     end
 
